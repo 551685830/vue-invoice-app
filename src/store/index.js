@@ -56,8 +56,13 @@ export default createStore({
     async GET_INVOICES({ commit, state }) {
       const getData = db.collection("invoices");
       const results = await getData.get();
+      console.log(results)
       results.forEach((doc) => {
+        // norepeat
         if (!state.invoiceData.some((invoice) => invoice.docId === doc.id)) {
+          console.log(doc.data());
+          console.log(JSON.stringify(doc.data()));
+          
           const data = {
             docId: doc.id,
             invoiceId: doc.data().invoiceId,
