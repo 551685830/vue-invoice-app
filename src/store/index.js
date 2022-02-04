@@ -1,6 +1,8 @@
 import { createStore } from "vuex";
 import db from "../firebase/firebaseInit";
 
+const invoiceData = require('../mock/data.json');
+
 export default createStore({
   state: {
     invoiceData: [],
@@ -54,6 +56,8 @@ export default createStore({
   },
   actions: {
     async GET_INVOICES({ commit, state }) {
+      console.log(invoiceData);
+      console.log('local json');
       const getData = db.collection("invoices");
       const results = await getData.get();
       console.log(results)
