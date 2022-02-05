@@ -1,7 +1,7 @@
 [
   {
     "id": "6PVatVTXcmnMSzrQ9ie8",
-    "invoiceID": "f827a2",
+    "invoiceId": "f827a2",
     "invoiceDraft": null,
     "clientStreetAddress": "rua aloalo",
     "invoiceDateUnix": 1642167848901,
@@ -75,7 +75,7 @@
     "invoicePending": true,
     "paymentTerms": "30",
     "invoiceDateUnix": 1642168457630,
-    "invoiceID": "a85746",
+    "invoiceId": "a85746",
     "paymentDueDateUnix": 1644760472040,
     "billerZipCode": "57700000",
     "productDescription": "blabla",
@@ -413,7 +413,8 @@
     ],
     "paymentDueDateUnix": 1647350902358,
     "invoiceDate": "14 de jan. de 2022",
-    "clientName": "juju"
+    "clientName": "juju",
+    "invoiceId":"23298923"
   },
   {
     "id": "eEuvXOVj8UsjAHDXMu3y",
